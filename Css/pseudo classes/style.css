@@ -1,0 +1,62 @@
+/* Pseudo info.:
+link - jak text normálně vypadá
+hover - jak vypadá když na textu máme kurzor
+active - jak vypadá když na něj klikneme ( v ten moment )
+visited - jak vypadá po kliknutí/navštívení stránky
+*/
+
+
+
+a:link{
+    color: hsl(195, 58%, 65%);
+}
+
+a:hover{
+    color: rgb(36, 230, 165);
+    font-size: 1.1em;
+}
+
+a:active{
+    color: hsl(240, 43%, 43%);
+    font-size: 1.1em;
+}
+
+a:visited{
+    color: rgb(255, 0, 0);
+}
+
+/* not(:hover) = jak vypadá pokud na tom nemáš kurzor */
+h2:not(:hover){
+    background-color: blueviolet;
+}
+
+/* nth-child() = vybere kontrétní elementy
+odd = lichý
+even = sudý
+numbers = 1,2,3,4...n
+3n,4n... = každý třetí, každý čtvrtý...
+3n + 1 = každý třetí ale začne od 1 ( 1,4,7...)
+*/
+li:nth-child(even){
+    background-color: aqua;
+}
+
+#greeting{
+    margin: auto;
+    display: table;
+    background-color: yellow;
+}
+
+/* p není zobrazeno */
+#greeting p{
+    background-color: aqua;
+    padding: 10px;
+    display: none;
+}
+
+/* p se zobrazí pokud máme kurzor na konkrétím textu (elementu) */
+#greeting:hover p{
+    margin: 0px;
+    display: block;
+}
+

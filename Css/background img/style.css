@@ -1,0 +1,15 @@
+/* background ifno.: 
+attachment : když scrollujete/zmenšujete stránku tak se vam upravý background
+position : pozice
+size : obrázek zabíra celý rozlišení
+repeat: pokud je obrázek moc malý tak se pomocí no-repeat ukáže jen jednou
+*/
+
+body{
+    background-image: url(pictures/pepe\ sad\ wallpaper.png);
+    background-attachment: fixed;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+}

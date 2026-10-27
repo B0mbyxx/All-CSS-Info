@@ -1,0 +1,36 @@
+
+
+/* 
+TRANSFORM JENOM JEDEN JINAK SE OSTATNÍ ZRUŠÍ
+translate samožný je pro x a y
+můžeme ppužít px nebo % (posunese o procenta šířky elementu )
+rotateX/Y/Z otačí 3D v jednotkách deg
+scaleX/Y roztáhnese na ose X/Y ( 1=100%)
+skewX/Y otáčení šikmo
+*/
+.box{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+    transform: rotateZ(60deg) scale(0.5);
+    display: inline-block;
+}
+
+#box1{
+    background-color: rgb(14, 161, 9);
+}
+
+#box2{
+    background-color: rgb(199, 41, 41);
+}
+
+#box3{
+    background-color: rgb(47, 60, 233);
+}
+
+img{
+    width: 100px;
+    transform: translateX(100%) rotateZ(180deg) scaleX(2);
+}

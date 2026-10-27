@@ -1,0 +1,14 @@
+/* první číslo je horizontální a 2 číslo pro vertikální + třetí číslo je BLUR*/
+/* Může jich být víc */
+
+h1{
+    font-size: 50px;
+    text-shadow: 3px 3px 5px red, -3px -3px 5px rgb(0, 217, 255);
+}
+
+#box1{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(234, 234, 234);
+    box-shadow: 3px 3px 5px;
+}

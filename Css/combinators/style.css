@@ -1,0 +1,19 @@
+#container {
+    border: 3px solid;
+}
+
+/* " " (mezera) = označí to co je PŘÍMO v containeru*/
+#container p{
+    background-color: yellow;
+}
+
+/* ">" = označí to co je v container ale v jiným elementu */
+#container > p{
+    background-color: rgb(30, 255, 0);
+}
+
+/* "~" = označí to co je mimo containeru */
+#container ~ p{
+    background-color: rgb(0, 225, 255);
+}
+

@@ -1,0 +1,26 @@
+/* position types:
+relative - posunese o počet pixelů z jaký strany chceme( naopak )
+fixed - box jde dopředu a je před textem
+absolute - pokud máme v divu další div tak můžeme použív absolute a box se bude pohybovat jen v daným baxy
+sticky - zustane na stejným míste, dokud nezačneme scrollovat
+static - default pozice
+*/
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color:rgb(25, 224, 224);
+    position: relative;
+    top: 100px;
+    left:100px;
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(255, 0, 0);
+    position: absolute;
+    top:50px;
+    left:50px;
+    
+}

@@ -1,0 +1,25 @@
+
+/* všechno je vedle sebe (inline-block) a šířku má  200px*/
+.gallery{
+    display: inline-block;
+    border: 2px solid hsl(0, 0%, 60%);
+    margin: 5px;
+    width: 200px;
+}
+
+/* text je uprostřed */
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+
+/* pokud najedeme na obrázek změní se border */
+.gallery:hover{
+    border: 2px solid hsl(0, 0%, 20%);
+}
+
+/* obrázky zabírají 100% gallery (200px) */
+.gallery img{
+    width: 100%;
+    height: auto;
+}

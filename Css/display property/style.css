@@ -1,0 +1,21 @@
+/* display types:
+block = element má celý řádek pro sebe (jakoby DIV)
+inline = elementy půjdou do textu ( vedle sebe ) 
+inline block = element bude upravený do bloku ALE jde psát vedle toho ( jakoby SPAN )
+none = vyamaže element
+*/
+/* Pokud máme VISIBILITY na HIDDEN, element zmizí ale zástane tam mezeda DOKUD nezadáme DISPLAY : NONE; */
+
+div{
+    background-color: crimson;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+span{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    display: inline;
+}

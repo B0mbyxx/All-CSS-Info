@@ -1,0 +1,77 @@
+/* 
+flex do elementy vedle sebe
+flex direction types:
+row - vedle sebe (výchozí)
+row-revers - opačný pořádí (zrcadlově) pokud je text napravo bude nalevo
+column - pod sebou
+column-revers - pod sebou opačně
+*/
+/* 
+justify-content (x) types:
+flex-stat - dá elementy na začátek ( levá strana )
+flex-end - dá elenetry na konec ( pravá strana )
+center - doprostřed
+space-between - dá mezery MEZI elementy
+space-around - da mezery mezi elementy a kraje elementů ALE mezi elemety je mezera 2x vetší
+space-evenly: mezeri okolo elementů jsou stejný
+*/
+/* 
+align-items (y)types:
+flex-stat - dá elementy na nahoru
+flex-end - dá elenety dolů
+center - doprostřed
+baseline - text bude srovaný s ostatními texty ( i když budeme měnit font-size)
+*/
+/* flex-wrap types:
+not-wrap - výchozí nic se nemění
+wrap - pokud máme málo místa v borderu, elemety se dají pod sebe
+wrap-reverse - opačně ( začínají dole, a když není místo posouvají se nahoru )
+*/
+
+/* align-content (funguje pokud jen s wrap) types:
+flex-stat - nemá žádný mezery pod sebou (začíná nohoře )
+flex-end - začíná dole a postupuje dolů
+center - uprostřed
+space-between - mezery jsou jen mezi elementy
+space-evenly: dá mezery MEZI elementy (nahoře a dole)
+*/
+
+/* column-gap jsou mezeri v řádku a
+row-gap jsou mezeri ve sloupci  */
+
+.containter{
+    display: flex;
+    border: 10px solid black;
+    height: 90vh ;
+    column-gap: 2em;
+    row-gap: 2em;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+/* self je pro jeden element */
+#box1{
+    background-color: rgb(231, 49, 85);
+    align-self: center;
+}
+
+#box2{
+    background-color: rgb(255, 255, 50);
+    align-self: end;
+}
+
+/* pozice -1 je na začáte a 1 je na konec */
+#box3{
+    background-color: rgb(39, 228, 39);
+    order: -1;
+}
+
+#box4{
+    background-color: rgb(53, 248, 248);
+}

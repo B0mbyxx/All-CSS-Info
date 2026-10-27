@@ -1,0 +1,98 @@
+
+body{
+    background-color: black;
+}
+#box{
+    width: 250px;
+    height: 250px;
+    background-color: crimson;
+    font-size: 13em;
+    text-align: center;
+    margin: 250px;
+}
+
+/* name je název animace 
+duration je jak dlouho animace bude trvat
+iteration-count kolikát se budou opakovat
+play state můžeme zastavit animaci pustit animaci atd ( hodí se k js.)
+*/
+/* direction types:
+normal : animace bude přehrávaná tak jak je zadaná
+reveres : přehraje se opačně
+alternate : normálně a pak opačně
+alternate-reverse : opačně a pak normálně 
+*/
+/* 
+animation-timing-function types:
+ease-in-out : výchozí ( můžeme upravit v browseru pomoci inspect a ve style vyhledáme ease-in-out a změní se na cubic-bezier)
+linear : plynulá animace
+steps - počet kroků ( např.steps(5))
+*/
+#box:hover{
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state:running;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+
+}
+/* keyframe je kod pro animaci a pojmenujeme animaci
+from - když máme translateX půjde to z prava do leva
+to - když máme translateX půjde to z leva do prava
+*/
+@keyframes slideLeft{
+    from{transform: translateX(300%)}
+}
+
+@keyframes slideRight{
+    to{transform: translateX(300%)}
+}
+
+
+/*
+from - když máme translateY půjde to ze zdola nahoru
+to - když máme translateY půjde to ze shora dolů
+*/
+@keyframes slideUp{
+    from{transform: translateY(300%)}
+}
+
+@keyframes slideDown{
+    to{transform: translateY(300%)}
+}
+
+/* udělá rotaci jednou (50% času ) a pak zpátky */
+@keyframes rotate{
+    50%{transform: rotateZ(360deg)}
+}
+
+/* oběm se zvětší a zustane vetší ( kdyby jsme měli 50% tak půjde zpátky do normálního oběmu*/
+@keyframes grow{
+    100%{transform: scale(2)}
+}
+
+/* oběm se změnší a zustane vetší ( kdyby jsme měli 50% tak půjde zpátky do normálního oběmu*/
+@keyframes shrink{
+    100%{transform: scale(0.5)}
+}
+
+/* element postupně mizí */
+@keyframes fade{
+    100%{opacity: 0}
+}
+
+/* barvy se budou měnit (RGB) */
+@keyframes colorChange{
+    0%{background-color: hsl(0, 100%, 50%)}
+    20%{background-color: hsl(35, 100%, 50%)}
+    40%{background-color: hsl(60, 100%, 50%)}
+    60%{background-color: hsl(100, 100%, 50%)}
+    80%{background-color: hsl(200, 100%, 50%)}
+    100%{background-color: hsl(260, 100%, 50%)}
+}
+
+/* Box bude svítit */
+@keyframes glow{
+    50%{box-shadow: 0px 0px 50px hsl(78, 100%, 50%);}
+}

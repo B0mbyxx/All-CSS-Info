@@ -1,0 +1,14 @@
+/* Když v borderu něco přesahuje použijeme OVERFLOW*/
+/* Typy overflow:
+visible : to co přesahuje jde vidět (zbytečný)
+hidden : obsah co není v borderu zmizí
+clip : stejný jako hidden ale da se použít s "overflow-clip-margin"( jde vidět určitá jen určitá část )
+scroll : na straně máme scroll bar
+auto: automaticky se přidá scroll bar pokud je potřeba
+ */
+
+div{
+    border: 2px solid;
+    height: 75px;
+    overflow: hidden;
+}

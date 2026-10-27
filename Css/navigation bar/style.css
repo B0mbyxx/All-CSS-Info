@@ -1,0 +1,38 @@
+/* žádý margin */
+body{
+    margin: 0px;
+}
+
+/* odsazení od kraje v levo a v pravo (pro main elementy)*/
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* text je uprostřed */
+h1{
+    text-align: center;
+}
+
+/* tečky u listu zmizí, display flex dá elementy vedle sebe */
+.navbar ul{
+    list-style-type: none;
+    background-color:hsl(0, 0%, 25%);
+    margin: 0px;
+    padding: 0px;
+    display:flex;
+}
+
+/* vymaže čáru pod textem, zvetší border (padding + block) */
+.navbar a {
+    color:white;
+    text-decoration: none;
+    padding: 15px;
+    display:block;
+}
+
+/* pokud máme kurozor na listu, změní se barva */
+.navbar a:hover{
+    background-color:hsl(0, 0%, 10%);
+}
+

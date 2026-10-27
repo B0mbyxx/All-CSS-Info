@@ -1,0 +1,56 @@
+/* pomůže srovnat texty vedle sebe */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+/* text je uprostřed */
+header{
+    background-color: hsl(0, 0%, 87%);
+    text-align: center;
+    padding: 25px;
+}
+
+.navbar{
+    background-color: hsl(0, 0%, 15%);
+    height: 50px;
+}
+
+/* text je nalevo */
+aside{
+    width: 20%;
+    float:left;
+    padding: 10px;
+}
+
+/* text je nalevo */
+section{
+    width: 40%;
+    float:left;
+    padding: 10px;
+}
+
+/* text je nalevo */
+article{
+    width: 40%;
+    float:left;
+    padding: 10px;
+}
+
+/* clear:both - dá text pod floaty */
+footer{
+    clear: both;
+    background-color: grey;
+    text-align: center;
+    padding:10px;
+}
+
+/* pokud bude šířka míň jak 600px, sekce zabírá 100% svýho prostoru ( šířky ) */
+@media screen and (max-width:600px){
+    aside, section, article{
+        width: 100%;
+    }
+}

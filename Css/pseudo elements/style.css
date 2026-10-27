@@ -1,0 +1,42 @@
+
+/*upravý se první písmeno */
+h1::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+
+/* upravý se první řádek ( je to jedno na jakým rozlišení ) */
+p::first-line{
+    background-color: yellow;
+}
+
+/* upravý se v tedy, když označíte text */
+p::selection{
+    background-color: rgb(20, 20, 20);
+    color: rgb(6, 95, 6);
+}
+
+/* např u ul nebude tečka ale cokoliv jinýho co zadáme */
+#fruit li::marker{
+    content: "✔️";
+}
+
+/* cokoliv co zadáme PŘED textem */
+#fruit li::before{
+    content: "fruits: ";
+}
+
+/* cokoliv co zadáme ZA text */
+#apple::after{
+    content: "🍎";
+}
+
+#orange::after{
+    content: "🍊";
+}
+
+#banana::after{
+    content: "🍌";
+}
+
+

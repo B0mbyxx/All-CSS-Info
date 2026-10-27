@@ -1,0 +1,45 @@
+/* menu by se zobrzuje jen když najedeme na button ( div zabíra celý řádek) */
+.dropdown{
+    display: inline-block;
+}
+
+/* změní se kurzor pokud přejedu přes button */
+.dropdown button{
+    background-color:hotpink ;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* bez dekorací ( odkaz není podtržený ) */
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+/* nezobrazuje se protože nemáme kurzor na buttonu*/
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: rgb(211, 174, 203);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+}
+
+/* elementy a se zobrazí pokud najedeme na button*/
+.dropdown:hover .content{
+    display: block;
+}
+
+/* pokdu máme kurzor na buttonu změní se barva */
+.dropdown:hover button{
+    background-color: rgb(231, 0, 116);
+}
+
+/* pokdu máme kurzor na a elementu změní se barva */
+.dropdown a:hover{
+    background-color: rgb(216, 140, 200);
+}

@@ -1,0 +1,20 @@
+/* colors names */
+
+body{
+    background-color: darkgrey;
+}
+
+/* RGB */
+#p1{
+    color: rgb(131, 33, 33);
+}
+
+/* hexadecimal numbers */
+#p2{
+    color: #aa0ea2;
+}
+
+/* hsl */
+#p3{
+    color: hsl(108, 89%, 24%);
+}

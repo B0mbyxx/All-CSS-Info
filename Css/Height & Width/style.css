@@ -1,0 +1,35 @@
+/* "*" je pro všechny elementy */
+/* box-sizing: border-box znamená to že boxy budou u sebe*/
+*{
+    box-sizing: border-box;
+}
+
+/* Aby to bylo líp vidět */
+.container{
+    background-color: grey;
+    height: 100vh;
+}
+
+/* Box info.:
+padding = text od borderu
+height = výžka ( automatická )
+width = šířka ( 50% od základu )
+float = boxy budou u sebe v řádku ( dokud je místo )
+text-aling = kde text v boxu bude
+min-height/width = minimální výška/šířka (ignoruje ostatní width/height)
+max-height/width = maximální výška/šířka (ignoruje ostatní width/height)
+*/
+
+/* pokud mame vetší max height/width paužije se nejvíce možný height/width 
+např. máme text AHOJ a použijeme  max-height: 50%;, max height bude cca 10 procent ( zálaží na padding a ostatních elementech ) protože máme málo textu
+*/
+.box{
+    background-color:white;
+    border: 2px solid;
+    padding: 25px;
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: center;
+    max-height: 50%;
+}

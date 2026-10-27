@@ -1,0 +1,28 @@
+/* Můžeme importovat vlastní font */
+/* pokud bawser nepodporuje daný font, napíšeme záložní */
+/* Arial, Geogia, Verdana, Courir New, Tahoma, Brush script M7, Impact, Trebuchet MS, Times New Roman */
+/* Pokud název má 2 slova, dáme ho do "" */
+
+h1{
+    font-family: Roboto, "lucida console";
+}
+
+/* Upravit taky můžeme style, weight nebo size "" */
+.p1{
+    font-family: 'Courier New';
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+/* Jednotky jsou:
+px = pixely
+rem = 16px (výchozí nastavení prohlížeče)
+1em = 100% 
+% = procenta 
+vw, vh = šírka/výška
+pt = 1/72 palce
+cm,mm,in = jednotky
+*/
+

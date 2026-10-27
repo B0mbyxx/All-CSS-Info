@@ -1,0 +1,24 @@
+/* Bez class nebo id píšeme samostatně */
+body{
+    background-color: grey;
+}
+
+/* VŠECHNY h2 elementy jsou upravený */
+h2{
+    font-size: 30px;
+}
+
+/* id= # */
+#p1,#p3{
+    color:orange;
+}
+
+/* class= . */
+.odd{
+    background-color: black;
+}
+
+.even{
+    color: lightgreen;
+    background-color: purple;
+}

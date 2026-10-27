@@ -1,0 +1,20 @@
+/* Flown-root že obrázek nebude přesahovat border ( border se přispůsobý )  */
+
+body{
+    border: 3px solid;
+    display:  flow-root ;
+    margin: 10px;
+}
+
+/* float = kde obrázek bude u textu ( nemusí to být obrázek ) */
+.tf{
+    width: 150px;
+    float: left;
+    margin: 10px;
+}
+
+.Dog{
+    width: 150px;
+    float: right;
+    margin-right: 10px;
+}

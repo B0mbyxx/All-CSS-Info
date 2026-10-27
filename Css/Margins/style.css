@@ -1,0 +1,25 @@
+/* MARGIN je odsazení od kraje stránky (top, left, bottom,left)*/
+body{
+    margin: 0px;
+}
+
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+}
+
+/* Margin můžeme napsat i konkrétně ( right teď nepotřebujeme ) */
+#box1{
+    background-color: crimson;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+/* Margin auto to dá automaticky na kraj kam chceme ( na opačnou stranu )*/
+#box2{
+    background-color: rgb(63, 143, 248);
+    margin-left: auto;
+}

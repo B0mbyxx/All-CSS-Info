@@ -1,0 +1,26 @@
+/* border styles:
+solid - plný
+dashed - čárkovaný
+dotted - tečkovaný
+double - 2x border
+groove - vyrytý do stránky ( jakoby )
+ridge - vystupuje ze stránky ( jakoby )
+inset - border do textu ( shadows )
+outset - border z textu ( shadows )
+none - odebere border
+*/
+/* width = tloušťka */
+/* radius = jak zaoblený border je */
+/* můžeme to napsat dohromady (width, style, color) KROMĚ RADIUSU */
+h1{
+    border: 3px solid red
+}
+
+/* upravujeme i určitý strany */
+p{
+    border-bottom: 3px solid rgb(255, 251, 0);
+    border-top: 3px solid rgb(255, 0, 0);
+    border-left: 3px dotted rgb(43, 255, 0);
+    border-right: 3px dotted rgb(0, 140, 255);
+    border-radius: 10px;
+}
